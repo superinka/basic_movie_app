@@ -1,0 +1,20 @@
+<div id="hero-image">
+    <h1 id="hero-title">{{title}}</h1>
+</div>
+
+<div id="poster-wrapper" class="container-padding clearfix">
+    <div class="container">
+    {{#each movies as |alias|}}
+        <div class= "poster">
+            <a href="/movie_single/{{this.episode_number}}">
+                <img src="/images/{{this.poster}}" class="img-responsive">
+                <div class="poster-info-overlay">
+                    <h3>{{this.title}}</h3>
+                    <h4>View More <i class="fa fa-arrow-right"></i></h4>
+                </div>
+            </a>
+        </div>
+    {{/each}}
+    </div>
+
+</div>
